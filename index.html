@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body onload="removeLogou()">
+    <div class="main">
+        <div class="cadastro-aligner">
+            <div class="itens-aligner">
+                <h1>Cadastro</h1>
+                <input type="text" placeholder="Nome" id="nome-input" autocomplete="off">
+                <input type="text" placeholder="CPF" id="cpf-input" onkeypress="formataCpf()" maxlength="14" autocomplete="off">
+                <input type="password" placeholder="Senha" id="senha-input" autocomplete="off">
+                <button onclick="criarConta()">Criar conta</button>
+                <a class="login" href="login.html">Já possuí uma conta? <b>Faça login</b></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="https://github.com/guzin-dev" target="_blank"><p>Powered by <b>guzin-dev</b></p></a>
+        <a href="https://github.com/guzin-dev/Lista-de-Compras" target="_blank"><img src="./img/github-icon.svg" alt=""></a>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

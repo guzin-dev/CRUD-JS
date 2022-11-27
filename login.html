@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body onload="removeLogou()">
+    <div class="main">
+        <div class="cadastro-aligner">
+            <div class="itens-aligner">
+                <h1>Login</h1>
+                <input type="text" placeholder="CPF" id="cpf-input" onkeypress="formataCpf()" maxlength="14" autocomplete="off">
+                <input type="password" placeholder="Senha" id="senha-input" autocomplete="off">
+                <button onclick="entrarConta()">Continuar</button>
+                <a class="login" href="index.html">Não possuí uma conta? <b>Crie uma</b></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Feito por Gustavo Braga</p>
+        <a href="https://www.instagram.com/gustavo_de_souza11/" target="_blank"><img src="img/Instagram_logo_2016.svg.webp" alt="" style="width: 1em;"> Instagram</a>
+        <a href="https://www.linkedin.com/in/gustavo-souza-braga-04b11a238/" target="_blank"><img src="img/LinkedIn_icon.svg.png" alt="" style="width: 1em;"> LinkedIn</a>
+        <a href="https://github.com/guzin-dev" target="_blank"><img src="img/Octicons-mark-github.svg" alt="" style="width: 1em;"> GitHub</a>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

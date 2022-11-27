@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin</title>
+</head>
+<body onload="carregarLista(), removeLogou()">
+    <div class="main">
+        <form>   
+            <select id="drop-down" onchange="selecionarConta(this)">  
+                <option value="none">Selecionar aluno</option>
+            </select>
+        </form>
+        <p class="exConta esconder" onclick="excluirConta()" id="btn_exConta">Excluir conta</p>
+        <button onclick="window.location.href = './index.html'" class="button-sair">Sair</button>
+    </div>
+    <footer>
+        <p>Feito por Gustavo Braga</p>
+        <a href="https://www.instagram.com/gustavo_de_souza11/" target="_blank"><img src="img/Instagram_logo_2016.svg.webp" alt="" style="width: 1em;"> Instagram</a>
+        <a href="https://www.linkedin.com/in/gustavo-souza-braga-04b11a238/" target="_blank"><img src="img/LinkedIn_icon.svg.png" alt="" style="width: 1em;"> LinkedIn</a>
+        <a href="https://github.com/guzin-dev" target="_blank"><img src="img/Octicons-mark-github.svg" alt="" style="width: 1em;"> GitHub</a>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
