@@ -30,7 +30,7 @@ function removeLogou(){
     if(localStorage.key(i).startsWith('logou')){
       const conta = JSON.parse(localStorage.getItem(localStorage.key(i)))
       localStorage.setItem(conta.cpf, localStorage.getItem(localStorage.key(i)))
-      localStorage.removeItem(localStorage.key(i))
+      localStorage.removeItem(`logou${conta.cpf}`)
     }
   }
 }
